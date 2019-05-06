@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cortext</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<link rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-4.3.1/dist/js/bootstrap.min.js">
+    <script src="popup.js"></script>
+
+    <style>
+        html, body {
+            font-size: 16px;
+            min-width: 250px;
+        }
+    </style>
+</head>
+<body>
+	<h1 class="text-center d-flex justify-content-center">
+		<img src="logo_original.png" alt="Cortext Logo" class="p-2" style="display: inline; height: 125px; width: 200px;">
+	</h1>
+    <body>
+        <form id="addbookmark" target="_blank" class="px-3">
+            <div class="form-group">
+                <p><label for="title">Title</label><br />
+                <input type="text" id="title" class="form-text form-control" name="title" size="35" value="" /></p>
+                <p><label for="url">Url</label><br />
+                <input class="form-text form-control mb-3" type="text" id="url" name="url" size="35" value="" /></p>
+                <p>
+                    <input id="save" class="btn btn-primary w-100 form-control" type="submit" value="Save Bookmark" />
+                    <span id="status-display"></span>
+                </p>
+            </div>
+        </form>
+    </body>
+</html>
