@@ -54,6 +54,7 @@ function addBookmark() {
     // Send the request and set status
     xhr.send(params);
     statusDisplay.innerHTML = 'Saving...';
+    open('https://pure-brushlands-63188.herokuapp.com/index', '_blank');
 }
 
 // When the popup HTML has loaded
@@ -62,6 +63,7 @@ window.addEventListener('load', function(evt) {
     statusDisplay = document.getElementById('status-display');
     // Handle the bookmark form submit event with our addBookmark function
     document.getElementById('addbookmark').addEventListener('submit', addBookmark);
+    // document.getElementById('addbookmark').addEventListener('submit', addBookmark)
     // Get the event page
     chrome.runtime.getBackgroundPage(function(eventPage) {
         // Call the getPageInfo function in the event page, passing in 
